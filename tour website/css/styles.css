@@ -1,0 +1,283 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root{
+    --pcolor: rgb(18, 49, 18);
+}
+
+body{
+    font-family: poppins;
+    background-color: gainsboro;
+}
+
+h2{
+    color: var(--pcolor);
+    text-align: center;
+    font-size: 32px;
+    padding-block: 1rem;
+}
+
+.width{
+    width: 85%;
+    margin: 0 auto;
+}
+
+header{
+    /* background-image: url(../img/do_rei3.jpg); */
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.my-nav{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    align-items: center;
+    padding-bottom: 3.5rem;
+}
+
+.my-nav .ul{
+    display: flex;
+    justify-content: space-around;
+    column-gap: 2rem;
+}
+
+.my-nav .ul a{
+    color: black;
+}
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    margin-bottom: 1.5rem;
+    align-items: center;
+    
+}
+
+.hero-text{
+    width: 100%;
+    max-width: 500px;
+}
+
+.hero-text h3{
+    font-size: 48px;
+}
+
+.hero-img{
+    width: 100%;
+    max-width: 450px;
+}
+
+.hero-img img{
+    width: 100%;
+    border-radius: 6px;
+}
+
+button{
+    padding: 15px 35px;
+    background-color: var(--pcolor);
+    border-radius: 3px;
+    color: white;
+    margin-top: 1rem;
+}
+
+.home-about-ctn{
+    display: flex;
+    align-items: center;
+    padding-block: 3rem;
+    flex-wrap: wrap-reverse;
+    row-gap: 3rem;
+}
+
+.home-about-img{
+    width: 100%;
+    max-width: 500px;
+}
+
+.home-about-img img{
+    width: 100%;
+}
+
+.home-about-text{
+    width: 100%;
+    max-width: 600px;
+    margin-left: -20px;
+    background-color: white;
+    border-radius: 8px;
+    height: fit-content;
+    padding: 2rem;
+}
+
+.home-about-text h4{
+    color: var(--pcolor);
+    font-size: 20px;
+}
+
+.home-about-text .text-img{
+    display: flex;
+    justify-content: space-around; 
+    margin-bottom: 1rem;  
+    width: 100%; 
+    max-width: 500px;
+}
+
+.home-about-text .text-img img{
+    width: 100%;
+    /* max-width: 250px; */
+    height: 150px;
+}
+
+.popular-ctn{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.popular h1{
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.img-show{
+    width: 100%;
+    max-width: 300px;
+    background-color: white;
+    padding-bottom: 1rem;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.img-show:hover{
+    /* filter: drop-shadow(8px 8px 12px rgb(204, 204, 204)); */
+}
+
+.img-show h5 a{
+    color: black;
+    /* text-decoration: underline; */
+}
+
+.img-show h5 a:hover{
+    color: var(--pcolor);
+    text-decoration: none;
+}
+
+
+
+.img-show img{
+    width: 100%;
+    height: 300px;
+    opacity: 0.9;
+}
+
+.img-show img:hover{
+    /* height: 290px; */
+    opacity: 1;
+    transition: .3s ease-in;
+}
+
+.desc{
+    display: flex;
+    justify-content: space-around;
+    font-size: 16px;
+    padding-top: 0.5rem;
+}
+
+@media (max-width: 500px){
+    .hero h3{
+        font-size: 28px;
+    }
+    .home-about-text{
+        margin-left: 0;
+    }
+    .home-about-text .text-img img{
+        max-width: 150px;
+    }
+
+    .my-nav{
+        padding-bottom: 1rem;
+    }
+
+    .my-nav .ul{
+        display: none;
+
+    }
+}
+
+.services{
+    padding-block: 2rem;
+
+}
+
+.service{
+    display: flex;
+    justify-content: space-around;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.service-text{
+    background-color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    width: 100%;
+    max-width: 350px;
+}
+
+.service-text i{
+    color: var(--pcolor);
+    font-size: 32px;
+    border: 1px solid var(--pcolor);
+    padding: 0.6rem;
+    border-radius: 50%;
+    
+}
+
+.service-icon{
+    text-align: center;
+}
+
+
+
+/* =================== About Page ================== */
+
+.about{
+    text-align: center;
+}
+
+.ctn{
+    display: flex;
+    justify-content: space-around;
+    padding-block: 3rem;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+}
+
+.vision{
+    flex-wrap: wrap-reverse;
+}
+
+.about-text{
+    width: 100%;
+    max-width: 500px;
+}
+
+.about-img{
+    width: 100%;
+    max-width: 350px;
+}
+
+.about-img img{
+    width: 100%;
+}
